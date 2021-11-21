@@ -32,7 +32,7 @@ Refer to this: https://raspberrypi.stackexchange.com/questions/45570/how-do-i-ma
 
 * 10. Start the Raspberry Pi and wait for klipper to start
 * 12. SSH into the Raspberry pi and vrify that /dev/ttyAMA1 now exists
-* 11. Add the following sections to your klipper printer.cfg (You may need to change this dection depending on your probe/endstop/stepper/leadscrew configuration)
+* 11. Add the following sections to your klipper printer.cfg (You may need to change this dection depending on your probe/endstop/stepper/leadscrew/bedsize configuration)
 
 ```
 [mcu creality]
