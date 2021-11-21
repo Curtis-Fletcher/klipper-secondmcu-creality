@@ -1,5 +1,5 @@
 # klipper-secondmcu-creality
-Setup for the 8-bit creality boards as a secondary MCU on Klipper on a Raspberry Pi
+Setup for the 8-bit creality boards as a secondary MCU on Klipper on a Raspberry Pi 4B
 
 ARM-Linux seems to have a kernel bug that prevents _some_ FDTI serial connection from being stable. Specifically, this hit me when I was trying to setup a Creality V1.1.5 board as a second MCU for my 3D printer, so I could run more steppers that my main SKR E3 Mini had available (for a triple Z setup)
 
