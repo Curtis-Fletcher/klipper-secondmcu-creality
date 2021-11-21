@@ -24,7 +24,7 @@ So I decided to switch to using UART directly, however the creality board doesn'
 * 8. Shut down the Raspberry Pi and disconnect the power
 * 9. Connect 3 jumpers from the Raspberry Pi GPIO to the Creality board EXT header as in the image
 
-NOTE, this is for a Raspberry Pi 4B that has more UARTs than other Reaspberry Pi's, setup for those _will_ be different
+NOTE, this is for a Raspberry Pi 4B that has more UARTs than other Reaspberry Pi's, setup for those _will_ be different. I'm using UART 3 as it steers clear of reserved and/or useful pins on the RPi
 
 ![Image showing connection pinouts](creality_second_MCU_pins.png?raw=true)
 
