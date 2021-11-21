@@ -16,12 +16,19 @@ So I decided to switch to using UART directly, however the creality board doesn'
 * 3. `cd klipper`
 * 4. `make menuconfig`
 * 5. Set up the config as specified in the image and exit saving the config
+
+![Image showing compilation options](creality_second_MCU_compile.png?raw=true)
+
 * 6. `make flash FLASH_DEVICE=/dev/serial/by-id/[THE FILE NAME YOU SAW APPEAR IN #2]`
 * 7. Edit the /boot/config.txt file and add the line `dtoverlay=uart3`
 * 8. Shut down the Raspberry Pi and disconnect the power
 * 9. Connect 3 jumpers from the Raspberry Pi GPIO to the Creality board EXT header as in the image
 
-NOTE, this is for a Raspberry Pi 4B that has more UARTS than other Reaspberry Pi's, setup for those _will_ be different
+NOTE, this is for a Raspberry Pi 4B that has more UARTs than other Reaspberry Pi's, setup for those _will_ be different
+
+![Image showing connection pinouts](creality_second_MCU_pins.png?raw=true)
+
+Refer to this: https://raspberrypi.stackexchange.com/questions/45570/how-do-i-make-serial-work-on-the-raspberry-pi3-pizerow-pi4-or-later-models/107780#107780 for information on RPi 4B UARTS
 
 * 10. Start the Raspberry Pi and wait for klipper to start
 * 12. SSH into the Raspberry pi and vrify that /dev/ttyAMA1 now exists
