@@ -5,7 +5,7 @@ ARM-Linux seems to have a kernel bug that prevents _some_ FDTI serial connection
 
 Here are details of the bug: https://github.com/raspberrypi/linux/issues/2406
 
-After some testing I couldn't find any way to connect the creatily board to my Klipper-running Raspberry Pi 4B via USB without itfailing, mid-print, with the following error in dmesg:
+After some testing I couldn't find any way to connect the creatily board to my Klipper-running Raspberry Pi 4B via USB without it failing, mid-print, with the following error in dmesg:
 
 `h341-uart ttyUSB0: usb_serial_generic_read_bulk_callback - urb stopped: -32`
 
